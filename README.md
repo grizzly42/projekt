@@ -24,12 +24,12 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
- * Script [stop_watch]() slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
+ * Script [stop_watch](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch.vhd) slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
    * V "entity" jsou definovány vstupy a výstupy stopky. Vstupy zahrnují signály pro hodinový signál, reset, startovací tlačítko, pozastavení a nastavení počátečních minut. Výstupy jsou určeny pro zobrazení sekund a minut.
 
    * V "architektuře" jsou definovány interní signály a logika stopky. Interní signály jsou použity pro povolení hodinového signálu, startovací tlačítko a čítače pro měření času v minutách a v sekundách.
 
-* Script [control_state]() je defakto automat pro řízení stavů.
+* Script [control_state](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/control_state.vhd) je defakto automat pro řízení stavů.
   * V části "entity ctrl_state" jsou definovány vstupní a výstupní porty entity, včetně signálů pro hodnoty týkající se stavů a zobrazení času.
 
   * V části "architecture behavioral" je definován datový typ "t_state" pro reprezentaci stavů automatu. Jsou také definovány různé signály pro uchovávání stavu, hodnoty času a nastavení.
@@ -42,7 +42,7 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
 
 
 
-* Kód [s_debouncing]() představuje implementaci modulu pro potlačení zákmitů u signálu tlačítka. Modul generuje výstupní signál, který indikuje, zda je tlačítko stisknuto pro potlačení zákmitů.
+* Kód [s_debouncing](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/s_debouncing.vhd) představuje implementaci modulu pro potlačení zákmitů u signálu tlačítka. Modul generuje výstupní signál, který indikuje, zda je tlačítko stisknuto pro potlačení zákmitů.
 
   * Kód začíná importem potřebných knihoven. Poté je definována struktura modulu s vstupními a výstupními signály. Vnitřně se vytváří signál pro povolení potlačení zákmitů.
 
