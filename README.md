@@ -1,3 +1,4 @@
+
 # VHDL project - Časovač na intervalový (kruhový) trénink
 
 ### Členové týmu
@@ -23,7 +24,33 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
 
 Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
- Ve scriptu [stop_watch]() pokud nejsme ve stavu nastavování a zároveň nejsme ve stavu nastavování a zároveň neskončil čas posledního kola tak každou vteřinu odečteme 1 vteřinu od odpočtu dokud 
+ * Script [stop_watch]() slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
+   * V "entity" jsou definovány vstupy a výstupy stopky. Vstupy zahrnují signály pro hodinový signál, reset, startovací tlačítko, pozastavení a nastavení počátečních minut. Výstupy jsou určeny pro zobrazení sekund a minut.
+
+   * V "architektuře" jsou definovány interní signály a logika stopky. Interní signály jsou použity pro povolení hodinového signálu, startovací tlačítko a čítače pro měření času v minutách a v sekundách.
+
+* Script [control_state]() je defakto automat pro řízení stavů.
+  * V části "entity ctrl_state" jsou definovány vstupní a výstupní porty entity, včetně signálů pro hodnoty týkající se stavů a zobrazení času.
+
+  * V části "architecture behavioral" je definován datový typ "t_state" pro reprezentaci stavů automatu. Jsou také definovány různé signály pro uchovávání stavu, hodnoty času a nastavení.
+
+  * Následuje instance dvou komponent: "clock_enable" a "stopwatch". Komponenta "clock_enable" generuje pulsy s frekvencí 1 Hz pro řízení synchronních procesů. Komponenta "stopwatch" řídí odpočítávání času a generování signálů pro zobrazení na sedmisegmentových displejích.
+
+  * Poté následuje část "p_ctrl", která reprezentuje řídící proces. V tomto procesu se na základě hodnot vstupních portů a stavu automatu vykonávají příslušné akce a přechody mezi stavy.
+
+  * Další část "p_output_fsm" reprezentuje proces pro zobrazení hodnoty času na sedmisegmentových displejích v závislosti na aktuálním stavu automatu.
+
+
+
+* Kód [s_debouncing]() představuje implementaci modulu pro potlačení zákmitů u signálu tlačítka. Modul generuje výstupní signál, který indikuje, zda je tlačítko stisknuto pro potlačení zákmitů.
+
+  * Kód začíná importem potřebných knihoven. Poté je definována struktura modulu s vstupními a výstupními signály. Vnitřně se vytváří signál pro povolení potlačení zákmitů.
+
+  * Následuje instance jiného modulu, který generuje pulzy povolení na základě hodinového signálu a resetovacího signálu.
+
+  * V samotném procesu se kontroluje hodinový signál a resetovací signál. Pokud je resetovací signál nastaven na logickou hodnotu '1', výstupní signál je nastaven na logickou hodnotu '0'. V opačném případě se kontroluje, zda je tlačítko stisknuto a zda je povoleno potlačení zákmitů. Pokud ano, výstupní signál je nastaven na logickou hodnotu '1', jinak na logickou hodnotu '0'.
+
+  * Tímto způsobem je zajištěno potlačení zákmitů u signálu tlačítka.
 
 ![diagram](https://user-images.githubusercontent.com/61315339/235538320-8d389bdf-28bb-4661-9fe9-6571cd6a70f4.png)
 
