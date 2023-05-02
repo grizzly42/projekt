@@ -94,4 +94,4 @@ Write descriptive text and simulation screenshots of your components.
 ## References
 
 1. [Nexys A7 Reference Manual](https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual)
-2. ...
+2. [One-minute stopwatch](https://www.edaplayground.com/x/2uKg)
