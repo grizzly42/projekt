@@ -9,15 +9,15 @@
 
 ## Teoretický popis
 
-Cílem tohoto projektu bylo vytvořit časovač pro kruhový trénink. Tento časovač by měl být navržen na vývojové desce XILINX Nexys A7 (Artix-7 50T),
-která využívá vysokokapacitní FPGA. Pro návrh tothoto časovače využijeme z hardwarových součástek 4 místný sedmisegmentový displej, tlačítka a přepínače.
+Cílem tohoto projektu bylo vytvořit časovač pro kruhový trénink. Tento časovač byl navržen pro vývojovou desku XILINX Nexys A7 (Artix-7 50T),
+která využívá vysokokapacitní FPGA. Pro návrh tothoto časovače využijeme z hardwarových součástek 4místný sedmisegmentový displej, tlačítka a přepínače.
 Tato deska bude naprogramována v programovacím jazyku VHDL.
 
-Časovač bude umožňovat nastavení počtu kol, délky cvičícího kola a také délku pauzy mezi koly. Pro toto nastavování budem používat přepínače. Jeden z přepínačů přepne zařízení do módu nastavování. A pomocí dalších tří přepínačů si vyberem co chceme nastavovat. Nastavování bude pomocí levého a pravého tlačítka. Prostřední tlačítko bude sloužit k resetu. Pomocí vrchního tlačítka se bude spouštět odpočet a spodním tlačítkem se odpočet pausne.
+Časovač bude umožňovat nastavení počtu kol, délky cvičícího kola a také délku pauzy mezi koly. Pro toto nastavování budem používat přepínače. Jeden z přepínačů přepne zařízení do módu nastavování. A pomocí dalších tří přepínačů si vyberem co budeme chtít nastavit. Nastavování bude pomocí levého a pravého tlačítka. Prostřední tlačítko bude sloužit k resetu. Pomocí vrchního tlačítka se bude spouštět odpočet a spodním tlačítkem se odpočet pozastaví.
 
 ## Hardware popis
 
-Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmisegmentové displeje. PřepínaČ úplně v pravo je určen pro přepnutí do módu nastavování, Přepínač první z leva je pro přepnutí do nastavování délky doby tréninku, přpínač druhý z leva je úrčen pro nastavování délky doby pauzy a třetí z leva je pro nastavování počtu kol. Nastavovánní tedy probíhá pomocí levého a pravého tlačítka. Problém u těchto tlačítek je, že při stisknutí tlačítka nastane takzvaný zákmit, což by znamenalo že po jednom stisknutí tlačítka by se přičetlo mnohonásobně víc sekund v nastavování. Tudíž je potřeba tyto zákmity softwarově ošetřit.
+Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmisegmentové displeje. PřepínaČ úplně v pravo je určen pro přepnutí do módu nastavování. První přepínač zleva je pro přepnutí do nastavování délky doby tréninku, přpínač druhý zleva je úrčen pro nastavování délky doby pauzy a třetí zleva je pro nastavení počtu kol. Nastavování tedy probíhá pomocí levého a pravého tlačítka. Problém u těchto tlačítek je, že při stisknutí tlačítka nastane takzvaný zákmit, což by znamenalo že po jednom stisknutí tlačítka by se přičetlo mnohonásobně víc sekund v nastavování. Tudíž je potřeba tyto zákmity softwarově ošetřit.
 
 ## Software popis
 
