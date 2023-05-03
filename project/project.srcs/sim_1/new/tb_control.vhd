@@ -25,9 +25,9 @@ architecture testbench of tb_control is
   signal sig_break_SW       : std_logic;
   signal sig_reps_SW        : std_logic;
   signal sig_digit_0          : std_logic_vector(4 - 1 downto 0);
-  signal sig_digit_1          : std_logic_vector(3 - 1 downto 0);
+  signal sig_digit_1          : std_logic_vector(4 - 1 downto 0);
   signal sig_digit_2          : std_logic_vector(4 - 1 downto 0);
-  signal sig_digit_3          : std_logic_vector(7 - 1 downto 0);
+  signal sig_digit_3          : std_logic_vector(4 - 1 downto 0);
 
 begin
 
@@ -59,7 +59,7 @@ begin
   p_clk_gen : process is
   begin
 
-    while now < 10000 ns loop -- 10 usec of simulation
+    while now < 30000 ns loop -- 10 usec of simulation
 
       sig_clk_100mhz <= '0';
       wait for c_CLK_100MHZ_PERIOD / 2;
@@ -102,7 +102,7 @@ begin
     
     --sig_set_SW <= '1';
     --sig_train_SW <= '1';
-    wait for 100 ns;
+    wait for 200 ns;
     
     --sig_BTNR_d <= '1';
     --wait for 50 ns;

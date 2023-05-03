@@ -10,105 +10,73 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="100000fs"></ZoomStartTime>
-      <ZoomEndTime time="228801fs"></ZoomEndTime>
-      <Cursor1Time time="173913fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="30000001fs"></ZoomEndTime>
+      <Cursor1Time time="30000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+      <NameColumnWidth column_width="141"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="23" />
-   <wvobject fp_name="/tb_control/sig_clk_100mhz" type="logic">
-      <obj_property name="ElementShortName">sig_clk_100mhz</obj_property>
-      <obj_property name="ObjectShortName">sig_clk_100mhz</obj_property>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb_control/uut_ctrl_state/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_control/sig_rst" type="logic">
-      <obj_property name="ElementShortName">sig_rst</obj_property>
-      <obj_property name="ObjectShortName">sig_rst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_BTNU_d" type="logic">
-      <obj_property name="ElementShortName">sig_BTNU_d</obj_property>
-      <obj_property name="ObjectShortName">sig_BTNU_d</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_BTNC_d" type="logic">
-      <obj_property name="ElementShortName">sig_BTNC_d</obj_property>
-      <obj_property name="ObjectShortName">sig_BTNC_d</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_BTND_d" type="logic">
-      <obj_property name="ElementShortName">sig_BTND_d</obj_property>
-      <obj_property name="ObjectShortName">sig_BTND_d</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_BTNL_d" type="logic">
-      <obj_property name="ElementShortName">sig_BTNL_d</obj_property>
-      <obj_property name="ObjectShortName">sig_BTNL_d</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_BTNR_d" type="logic">
-      <obj_property name="ElementShortName">sig_BTNR_d</obj_property>
-      <obj_property name="ObjectShortName">sig_BTNR_d</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_set_SW" type="logic">
-      <obj_property name="ElementShortName">sig_set_SW</obj_property>
-      <obj_property name="ObjectShortName">sig_set_SW</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_train_SW" type="logic">
-      <obj_property name="ElementShortName">sig_train_SW</obj_property>
-      <obj_property name="ObjectShortName">sig_train_SW</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_break_SW" type="logic">
-      <obj_property name="ElementShortName">sig_break_SW</obj_property>
-      <obj_property name="ObjectShortName">sig_break_SW</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_reps_SW" type="logic">
-      <obj_property name="ElementShortName">sig_reps_SW</obj_property>
-      <obj_property name="ObjectShortName">sig_reps_SW</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_digit_0" type="array">
-      <obj_property name="ElementShortName">sig_digit_0[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_digit_0[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_digit_1" type="array">
-      <obj_property name="ElementShortName">sig_digit_1[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_digit_1[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_digit_2" type="array">
-      <obj_property name="ElementShortName">sig_digit_2[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_digit_2[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/sig_digit_3" type="array">
-      <obj_property name="ElementShortName">sig_digit_3[6:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_digit_3[6:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_control/c_CLK_100MHZ_PERIOD" type="other">
-      <obj_property name="ElementShortName">c_CLK_100MHZ_PERIOD</obj_property>
-      <obj_property name="ObjectShortName">c_CLK_100MHZ_PERIOD</obj_property>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_control/uut_ctrl_state/sig_state" type="other">
       <obj_property name="ElementShortName">sig_state</obj_property>
       <obj_property name="ObjectShortName">sig_state</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/digit_3" type="array">
+      <obj_property name="ElementShortName">digit_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/digit_2" type="array">
+      <obj_property name="ElementShortName">digit_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/digit_1" type="array">
+      <obj_property name="ElementShortName">digit_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/digit_0" type="array">
+      <obj_property name="ElementShortName">digit_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit_0[3:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_control/uut_ctrl_state/sig_num_reps" type="array">
       <obj_property name="ElementShortName">sig_num_reps[3:0]</obj_property>
       <obj_property name="ObjectShortName">sig_num_reps[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_control/uut_ctrl_state/sig_seconds_l" type="array">
-      <obj_property name="ElementShortName">sig_seconds_l[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_seconds_l[3:0]</obj_property>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/stopwatch/s_en" type="logic">
+      <obj_property name="ElementShortName">s_en</obj_property>
+      <obj_property name="ObjectShortName">s_en</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_control/uut_ctrl_state/sig_seconds_h" type="array">
-      <obj_property name="ElementShortName">sig_seconds_h[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_seconds_h[2:0]</obj_property>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/stopwatch/s_start" type="logic">
+      <obj_property name="ElementShortName">s_start</obj_property>
+      <obj_property name="ObjectShortName">s_start</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_control/uut_ctrl_state/sig_minutes_l" type="array">
-      <obj_property name="ElementShortName">sig_minutes_l[3:0]</obj_property>
-      <obj_property name="ObjectShortName">sig_minutes_l[3:0]</obj_property>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/stopwatch/s_pause" type="logic">
+      <obj_property name="ElementShortName">s_pause</obj_property>
+      <obj_property name="ObjectShortName">s_pause</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_control/uut_ctrl_state/stopwatch/min_set" type="array">
       <obj_property name="ElementShortName">min_set[3:0]</obj_property>
       <obj_property name="ObjectShortName">min_set[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_control/uut_ctrl_state/stopwatch/s_start" type="logic">
-      <obj_property name="ElementShortName">s_start</obj_property>
-      <obj_property name="ObjectShortName">s_start</obj_property>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/stopwatch/cnt_end" type="logic">
+      <obj_property name="ElementShortName">cnt_end</obj_property>
+      <obj_property name="ObjectShortName">cnt_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/sig_stopwatch_cnt" type="array">
+      <obj_property name="ElementShortName">sig_stopwatch_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sig_stopwatch_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_control/uut_ctrl_state/sig_set_enable" type="logic">
+      <obj_property name="ElementShortName">sig_set_enable</obj_property>
+      <obj_property name="ObjectShortName">sig_set_enable</obj_property>
    </wvobject>
 </wave_config>

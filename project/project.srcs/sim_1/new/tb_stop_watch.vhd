@@ -11,6 +11,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 ------------------------------------------------------------------------
 -- Entity declaration for testbench
@@ -32,23 +33,26 @@ architecture testbench of tb_stopwatch_seconds is
     signal s_reset        : std_logic;
     signal s_start        : std_logic;
     signal s_pause        : std_logic;
-    signal s_seconds_h    : std_logic_vector(3 - 1 downto 0);
+    signal s_seconds_h    : std_logic_vector(4 - 1 downto 0);
     signal s_seconds_l    : std_logic_vector(4 - 1 downto 0);
-    signal s_minutes_l : std_logic_vector(4 - 1 downto 0);
-    
+    signal s_minutes_l    : std_logic_vector(4 - 1 downto 0);
+    signal s_min_set      : std_logic_vector(4 - 1 downto 0);
+    signal sig_set_enable : std_logic;
 
 begin
     -- Connecting testbench signals with stopwatch_seconds entity
     -- (Unit Under Test)
-    uut_stopwatch : entity work.stopwatch_seconds
+    uut_stopwatch : entity work.stopwatch_new
         port map(
             clk            => s_clk_100MHz,
-            rst          => s_reset,
+            rst            => s_reset,
             start_i        => s_start,
             pause_i        => s_pause,
             seconds_h_o    => s_seconds_h,
             seconds_l_o    => s_seconds_l,          
-            minutes_l_o => s_minutes_l
+            minutes_l_o    => s_minutes_l,
+            min_set        => s_min_set,
+            set_enable     => sig_set_enable
         );
 
     --------------------------------------------------------------------
@@ -71,9 +75,9 @@ begin
     p_reset_gen : process
     begin
         s_reset <= '0';
-        wait for 200 ns;
+        wait for 20 ns;
         s_reset <= '1';                 -- Reset activated
-        wait for 500 ns;
+        wait for 20 ns;
         s_reset <= '0';
         wait;
     end process p_reset_gen;
@@ -83,12 +87,13 @@ begin
     --------------------------------------------------------------------
     p_stimulus : process
     begin
+        s_min_set <= "0011";
         s_start  <= '0';
         s_pause  <= '0';
-        wait for 750 ns;
+        wait for 50 ns;
         s_start  <= '1';
-        -- Test start and pause conditions
-        --- WRITE YOUR CODE HERE
+        wait for 1000 ns;
+        s_pause  <= '0';
         wait;
     end process p_stimulus;
 
