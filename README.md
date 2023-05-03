@@ -54,6 +54,8 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
  
  * Kód  [top](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/top.vhd) je jako návod pro zapojení a řízení displeje, který ukazuje čas. Kód obsahuje definice vstupů (např. tlačítka) a výstupů (např. segmenty displeje), a také popisuje jak tyto části spolu komunikují. Tímto způsobem můžeme vidět aktuální čas na displeji a ovládat ho pomocí tlačítek.
 
+* Zbylé použité scripty jsou použity ze zdrojových kódů z počítačových cvičení na kterých jsme pracovali v průběhu semsetru a byli jen trochu poupraveny.
+
 ![diagram](https://user-images.githubusercontent.com/61315339/235538320-8d389bdf-28bb-4661-9fe9-6571cd6a70f4.png)
 
 
