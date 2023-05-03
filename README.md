@@ -91,7 +91,7 @@ Na obrázku můžeme vídět simulaci scriptu [control_state](https://github.com
   * Pro zastavení časovače zmáčkněte tlačítko stop které je úmístěno mezi tlačítky dole (viz obrázek `STOP`)
   * Jestli chcete jet celý trénink od znova stiskněte tlačítko reset které je umístěno mezi tlačítky přesně uprostřed (viz obrázek `RESET`).
   
-  .
+  
 
 
 
