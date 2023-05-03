@@ -22,7 +22,6 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
 ## Software popis
 
 
-Put flowchats/state diagrams of your algorithm(s) and direct links to source/testbench files in `src` and `sim` folders. 
 
  * Script [stop_watch](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch.vhd) slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
    * V "entity" jsou definovány vstupy a výstupy stopky. Vstupy zahrnují signály pro hodinový signál, reset, startovací tlačítko, pozastavení a nastavení počátečních minut. Výstupy jsou určeny pro zobrazení sekund a minut.
