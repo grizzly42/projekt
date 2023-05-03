@@ -27,7 +27,7 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
  * Script [stop_watch](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch.vhd) slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
    * V "entity" jsou definovány vstupy a výstupy stopky. Vstupy zahrnují signály pro hodinový signál, reset, startovací tlačítko, pozastavení a nastavení počátečních minut. Výstupy jsou určeny pro zobrazení sekund a minut.
 
-   * V "architektuře" jsou definovány interní signály a logika stopky. Interní signály jsou použity pro povolení hodinového signálu, startovací tlačítko a čítače pro měření času v minutách a v sekundách.
+   * V "architektuře" jsou definovány interní signály a logika stopek. Interní signály jsou použity pro povolení hodinového signálu, startovací tlačítko a čítače pro měření času v minutách a v sekundách.
 
 * Script [control_state](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/control_state.vhd) je defakto automat pro řízení stavů.
   * V části "entity ctrl_state" jsou definovány vstupní a výstupní porty entity, včetně signálů pro hodnoty týkající se stavů a zobrazení času.
@@ -61,6 +61,7 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
 ![simulation](pictures/Stopwatch_count_start.png)
 ![simulation](pictures/Stopwatch_count_3_min.png)
 Na obrazcívh vidíme simulaci komponentu [stop_watch](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch.vhd), při nastavení délky kola, script správně odečítá čas a spravně se mění, když například dojde na 2:00, tak po odečtení jedné sekudny přejde na 1:59.
+
 ![simulation](pictures/Control_train_break_1.png)
 Na obrázku můžeme vídět simulaci scriptu [control_state](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/control_state.vhd), podle simulace script funguje tak jak má. Správě se mění stavy a také mají dobře nastavenou délku. Čas se odečíta podle předpokladu a při změně stavu se sám přepne na správné nastavení, které se zadalo na začátku tréninku. 
 
