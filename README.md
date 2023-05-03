@@ -56,7 +56,9 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
 
 
 
-* Zbylé použité scripty jsou použity ze zdrojových kódů z počítačových cvičení na kterých jsme pracovali v průběhu semsetru a byli jen trochu poupraveny. Kódy [clk_en_db](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/clk_en_db.vhd) a [clock_enable.vhd](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/clock_enable.vhd) jsou signály pro spuštění různých procesů. `clock_enable` spouští odečtení sekundy od času na časovači a `clk_en_db` spouští porovnávání u tlačítek jestli nenastali zákmity .Pokud je CE signál aktivní (logická hodnota '1'), povoluje se výstupní signál, jinak se výstup deaktivuje a modul je neaktivní.
+* Zbylé použité scripty jsou použity ze zdrojových kódů z počítačových cvičení na kterých jsme pracovali v průběhu semsetru a byli jen trochu poupraveny.
+  * Kódy [clk_en_db](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/clk_en_db.vhd) a [clock_enable.vhd](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/clock_enable.vhd) jsou signály pro spuštění různých procesů. `clock_enable` spouští odečtení sekundy od času na časovači a `clk_en_db` spouští porovnávání u tlačítek jestli nenastali zákmity .Pokud je CE signál aktivní (logická hodnota '1'), povoluje se výstupní signál, jinak se výstup deaktivuje a modul je neaktivní.
+  * Kód  [hex_7seg](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/hex_7seg.vhd)reprezentuje 7-segmentový dekodér, který převádí 4-bitový signál "hex" na kód pro zobrazení číslice na 7-segmentovém displeji. Pokud je vstup "blank" nastaven na hodnotu '1', znamená to, že se má na displeji nic nezobrazovat a výstup na všech segmentech je tedy logická hodnota '1'. Pokud je vstup "blank" na hodnotě '0', proces přepíná mezi jednotlivými číslicemi podle vstupní hodnoty "hex".
 
 ![diagram](https://user-images.githubusercontent.com/61315339/235538320-8d389bdf-28bb-4661-9fe9-6571cd6a70f4.png)
 
