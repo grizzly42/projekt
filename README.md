@@ -69,7 +69,7 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
 ![simulation](pictures/Stopwatch_count_3_min.png)
 Na obrazcích vidíme simulaci komponentu [stop_watch](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch.vhd), při nastavení délky kola, script správně odečítá čas a spravně se mění, když například dojde na 2:00, tak po odečtení jedné sekudny přejde na 1:59.
 
-![simulation](pictures/Control_train_break_1.png)
+![simulation](pictures/Control_train_break_2.png)
 Na obrázku můžeme vídět simulaci scriptu [control_state](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/control_state.vhd), podle simulace script funguje tak jak má. Správě se mění stavy a také mají dobře nastavenou délku. Čas se odečíta podle předpokladu a při změně stavu se sám přepne na správné nastavení, které se zadalo na začátku tréninku. 
 
 ## Návod k použití
