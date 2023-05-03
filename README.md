@@ -60,6 +60,13 @@ Put flowchats/state diagrams of your algorithm(s) and direct links to source/tes
 ### Simulace komponentů
 
 Write descriptive text and simulation screenshots of your components.
+* Control_train_break
+![image](https://user-images.githubusercontent.com/61315339/235862201-f5c332b5-c359-4ce8-a68d-1f1a821690b7.png)
+* Stopwatch_count_3_min
+![image](https://user-images.githubusercontent.com/61315339/235862257-a573b746-0c9f-4528-a862-b1700ba31de9.png)
+* Stopwatch_count_start
+![image](https://user-images.githubusercontent.com/61315339/235862295-f16a4c62-4418-462c-b46e-e72daed29ff8.png)
+
 
 ## Návod k použití
 
