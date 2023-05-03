@@ -53,6 +53,9 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
  
  * Kód  [top](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/top.vhd) je jako návod pro zapojení a řízení displeje, který ukazuje čas. Kód obsahuje definice vstupů (např. tlačítka) a výstupů (např. segmenty displeje), a také popisuje jak tyto části spolu komunikují. Tímto způsobem můžeme vidět aktuální čas na displeji a ovládat ho pomocí tlačítek.
 
+
+Kódy [clk_en_db](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/clk_en_db.vhd) a [clock_enable.vhd](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/clock_enable.vhd)  popisují jednoduché obvody pro generování pulzu clock enable (CE) signálu pomocí vstupního hodinového signálu (CLK), reset signálu (RST) a časovače (sig_cnt). Obvod generuje pulz CE, který trvá jednu hodinovou periodu po každých g_MAX periodech hodinového signálu CLK. Obvod také implementuje synchronní reset - pokud je signál RST aktivní, čítač a CE signál jsou resetovány na počáteční hodnoty.
+
 * Zbylé použité scripty jsou použity ze zdrojových kódů z počítačových cvičení na kterých jsme pracovali v průběhu semsetru a byli jen trochu poupraveny.
 
 ![diagram](https://user-images.githubusercontent.com/61315339/235538320-8d389bdf-28bb-4661-9fe9-6571cd6a70f4.png)
