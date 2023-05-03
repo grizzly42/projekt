@@ -23,7 +23,7 @@ Z hardwarových součástek využíváme 4 přepínače, 5 tlačítek a 4 sedmis
 
 
 
- * Script [stop_watch](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch.vhd) slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
+ * Script [stop_watch_new](https://github.com/grizzly42/projekt/blob/main/project/project.srcs/sources_1/new/stop_watch_new.vhd) slouží jako základní stopky.  Kód se skládá ze dvou částí: "entity" a "architektury":
    * V "entity" jsou definovány vstupy a výstupy stopky. Vstupy zahrnují signály pro hodinový signál, reset, startovací tlačítko, pozastavení a nastavení počátečních minut. Výstupy jsou určeny pro zobrazení sekund a minut.
 
    * V "architektuře" jsou definovány interní signály a logika stopek. Interní signály jsou použity pro povolení hodinového signálu, startovací tlačítko a čítače pro měření času v minutách a v sekundách.
