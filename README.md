@@ -74,6 +74,8 @@ Na obrázku můžeme vídět simulaci scriptu [control_state](https://github.com
 
 ## Návod k použití
 
+* Nejdříve je potřeba zapnout reset tlačítko které nastaví defaultní hodnoty.
+
 * Nastavení parametrů pro časovač na kruhový trenink.
 
   * Nejdříve je potřeba přepnout přepínač do módu nastavování. Tím že přepínač úplně v pravo (viz obrázek `SET` ) posuneme směrem k tlačítkům.
