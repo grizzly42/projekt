@@ -75,7 +75,8 @@ begin
 
   clk_en0 : entity work.clock_enable
     generic map (
-      g_MAX => 1   --sim 1, board 5000000
+      g_MAX => 1
+         --sim 1, board 5000000
       
     )
     port map (
@@ -139,6 +140,8 @@ begin
       if (rst = '1') then                  
         sig_state <= GO;
         sig_waitset <= (others => '0');
+        sig_start <= '0';           
+        sig_pause <= '1';
         
         sig_reps_set  <= "0010";
         sig_train_set <= "0010";
