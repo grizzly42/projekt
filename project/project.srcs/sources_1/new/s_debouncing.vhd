@@ -18,7 +18,7 @@ begin
     
 clk_enable : entity work.clk_en_db
       generic map (
-            g_MAX => 5    -- sim 5, board 12000000
+            g_MAX => 12000000    -- sim 5, board 12000000
       )        
       port map (
           clk => clk,
