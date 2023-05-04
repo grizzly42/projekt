@@ -42,7 +42,31 @@ begin
       seg   => seg
     );
 
+  clk_en2 : entity work.clock_enable
+    generic map (
+      
+      g_MAX => 400000
+    )
+    port map (
+      clk => clk,
+      rst => rst,
+      ce  => sig_en_4ms
+    );
   
+  
+  bin_cnt0 : entity work.cnt_up_down
+    generic map (
+      g_CNT_WIDTH => 2 --! Default number of counter bits
+    )
+    port map (
+    clk    => clk,
+    rst    => rst,
+    en     => sig_en_4ms,
+    cnt_up => '0',
+    cnt    => sig_cnt_2bit
+    );
+    
+    
   p_mux : process (clk) is
   begin
 
