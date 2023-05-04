@@ -35,9 +35,9 @@ architecture Behavioral of stopwatch_new is
     
 
 begin
-   clk_en0 : entity work.clock_enable
+   clk_en1 : entity work.clock_enable
        generic map(
-            g_MAX => 4 --sim 4, board 100000000      
+            g_MAX => 100000000 --sim 4, board 100000000      
        )
         port map(
             clk => clk,
